@@ -105,3 +105,18 @@
   background: #65c4fa;
   filter: blur(150px);
 }
+.transition-colors {
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-item {
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-item:hover {
+  transform: translateX(5px);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}

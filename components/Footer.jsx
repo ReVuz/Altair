@@ -35,7 +35,7 @@ const Footer = () => (
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
         {/* Contact Information Section */}
-        <div className="flex flex-col gap-4 mb-8">
+        <div className="flex flex-col gap-4 mb-8" id="contact">
           <h5 className="font-bold text-[20px] text-white">Contact Information</h5>
           <div className="grid md:grid-cols-3 gap-4 text-white opacity-80 text-[14px]">
             <div className="flex flex-col">
