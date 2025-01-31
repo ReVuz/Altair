@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../styles';
 import parse from 'html-react-parser';
+import styles from '../styles';
 
 const StartSteps = ({ number, text }) => (
   <div className={`${styles.flexCenter} flex-row`}>
