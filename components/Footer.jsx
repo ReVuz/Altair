@@ -34,6 +34,28 @@ const Footer = () => (
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
 
+        {/* Contact Information Section */}
+        <div className="flex flex-col gap-4 mb-8">
+          <h5 className="font-bold text-[20px] text-white">Contact Information</h5>
+          <div className="grid md:grid-cols-3 gap-4 text-white opacity-80 text-[14px]">
+            <div className="flex flex-col">
+              <span>Harika Manthena</span>
+              <a href="tel:6309298466" className="hover:text-blue-400">6309298466</a>
+              <a href="mailto:hmanthena@altair.com" className="hover:text-blue-400">hmanthena@altair.com</a>
+            </div>
+            <div className="flex flex-col">
+              <span>Guru Charan Kotthuru</span>
+              <a href="tel:9392394354" className="hover:text-blue-400">9392394354</a>
+              <a href="mailto:guruc@altair.com" className="hover:text-blue-400">guruc@altair.com</a>
+            </div>
+            <div className="flex flex-col">
+              <span>Ramesha BS</span>
+              <a href="tel:9177770258" className="hover:text-blue-400">9177770258</a>
+              <a href="mailto:rambs@altair.com" className="hover:text-blue-400">rambs@altair.com</a>
+            </div>
+          </div>
+        </div>
+
         <div className="flex items-center justify-between flex-wrap gap-4">
           <h4 className="font-extrabold text-[24px] text-white">
             ALTAIR
