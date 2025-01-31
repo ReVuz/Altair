@@ -1,4 +1,6 @@
+import React from 'react';
 import styles from '../styles';
+import parse from 'html-react-parser';
 
 const StartSteps = ({ number, text }) => (
   <div className={`${styles.flexCenter} flex-row`}>
@@ -7,9 +9,10 @@ const StartSteps = ({ number, text }) => (
     </div>
     <p
       className="flex-1 ml-[30px] font-normal text-[18px] text-[#b0b0b0] leading-[32px]"
-      dangerouslySetInnerHTML={{ __html: text }}
-    />
+    >
+      {parse(text)}
+    </p>
   </div>
 );
 
-export default StartSteps
+export default StartSteps;
