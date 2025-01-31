@@ -32,8 +32,13 @@ export const startingFeatures = [
 ];
 
 export const startingFeatures2 = [
-  'Use models from or create your own using Inspire or any other CAD software.',
-  'Note: Use only Altair Inspire Software for simulation.',
+  'Free Academic License: <a href="https://web.altair.com/altair-student-edition" target="_blank" rel="noopener noreferrer" style="color:#DCDCDC; text-decoration: underline;">Altair Student Edition</a>',
+  'Altair Inspire: <a href="https://web.altair.com/academic-hub-inspire" target="_blank" rel="noopener noreferrer" style="color:#DCDCDC; text-decoration: underline;">Download Here</a>',
+  'Free Altair Domain specialist led training: <a href="https://learn.altair.com/" target="_blank" rel="noopener noreferrer" style="color:#DCDCDC; text-decoration: underline;">Altair Training Portal</a>',
+  'Free Technical Support Forum: <a href="https://community.altair.com/community" target="_blank" rel="noopener noreferrer" style="color:#DCDCDC; text-decoration: underline;">Join Here</a>',
+  'YouTube Tutorials: <a href="https://www.youtube.com/c/AltairHowTo" target="_blank" rel="noopener noreferrer" style="color:#DCDCDC; text-decoration: underline;">Altair How-to videos</a>',
+  'Altair Inspire Personal Edition: <a href="https://web.altair.com/inspire-personal-edition" target="_blank" rel="noopener noreferrer" style="color:#DCDCDC; text-decoration: underline;">Download Here</a>',
+  'Altair Global Student Contest Website link: <a href="https://web.altair.com/global-student-contest-2023" target="_blank" rel="noopener noreferrer" style="color:#DCDCDC; text-decoration: underline;">Altair Global Student Contest</a>',
 ];
 
 export const newFeatures = [
