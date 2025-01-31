@@ -54,21 +54,27 @@ export const newFeatures = [
 export const insights = [
   {
     imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse and be happy :)',
+    title: 'Altair Inspire Structures Professional Certification',
     subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+    'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
   },
   {
     imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
+    title: 'Inspire Solved File (.stmod)',
     subtitle:
         'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
   },
   {
     imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
+    title: 'Analysis Report (PPT, PDF, or DOC)',
     subtitle:
         'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+  },
+  {
+    imgUrl: '/planet-06.png',
+    title: 'Submit a video recording of the process on YouTube and share the link.',
+    subtitle:
+    'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
   },
 ];
 

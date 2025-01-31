@@ -7,7 +7,7 @@ import styles from '../styles';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { StartSteps, TitleText, TypingText } from '../components';
 
-import { startingFeatures2 } from '../constants';
+import { startingFeatures } from '../constants';
 
 const Resources = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -31,7 +31,7 @@ const Resources = () => (
         <TypingText title="| How to Participate " />
         <TitleText title={<> Choose Your Model </>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-          {startingFeatures2.map((features, index) => (
+          {startingFeatures.map((features, index) => (
             <StartSteps
               key={index} // it's better to use a unique identifier if possible
               number={index + 1}
