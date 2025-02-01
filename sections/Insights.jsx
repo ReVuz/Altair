@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
 import { insights } from '../constants';
 import { InsightCard, TitleText, TypingText } from '../components';
@@ -16,17 +15,47 @@ const Insights = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| what to Submit" textStyles="text-center" />
-      <TitleText title="Submit Your Work" textStyles="text-center" />
+      {/* Section Header */}
+      <div className="text-center mb-16">
+        <TypingText title="| what to Submit" textStyles="mb-4" />
+        <TitleText title="Submit Your Work" />
+      </div>
 
-      <div className="mt-[50px] flex flex-col gap-[30px]">
-        {insights.map((insight, i) => (
+      {/* Main Insights Grid */}
+      <div className="flex flex-col gap-14">
+        {insights.map((insight, index) => (
           <InsightCard
-            key={`Insight-${i + 1}`}
+            key={`insight-${index}`}
             {...insight}
-            index={i + 1}
+            index={index + 1}
           />
         ))}
+      </div>
+
+      {/* Submission Instructions Section */}
+      <div className="mt-28">
+        <TitleText
+          title="Submission Instructions"
+          textStyles="text-left mb-10"
+        />
+
+        <div className="flex flex-col gap-14">
+          <InsightCard
+            key="submission-instruction-1"
+            imgUrl="/planet-06.png"
+            title={<span className="text-4xl">Zip your files and rename the archive as <span className="text-3xl font-semibold"> "YouCollege_YourName.zip"</span></span>}
+            reverse
+            index={5}
+          />
+
+          <InsightCard
+            key="submission-instruction-2"
+            imgUrl="/planet-06.png"
+            title={<span className="text-4xl">Upload your zipped file [here]</span>}
+            reverse
+            index={6}
+          />
+        </div>
       </div>
     </motion.div>
   </section>
