@@ -19,16 +19,18 @@ const Footer = () => (
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
           Ready to Submit!
         </h4>
-        <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] hover:bg-[#1b4d6b] rounded-[32px] gap-[12px] transition duration-300">
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
-            Click Here
-          </span>
-        </button>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVKCPMU3TpIA1ZvLnPXarsxiSnkjq6fTqbaup60zy_gg4tTQ/viewform?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] hover:bg-[#1b4d6b] rounded-[32px] gap-[12px] transition duration-300">
+            <img
+              src="/headset.svg"
+              alt="headset"
+              className="w-[24px] h-[24px] object-contain"
+            />
+            <span className="font-normal text-[16px] text-white">
+              Click Here
+            </span>
+          </button>
+        </a>
       </div>
 
       <div className="flex flex-col">
