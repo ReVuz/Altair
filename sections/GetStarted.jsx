@@ -31,7 +31,7 @@ const GetStarted = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| How to Participate " textStyles="text-2xl font-bold" />
+        <TypingText title="| How to Participate " />
         <TitleText title={<> Choose Your Model </>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((features, index) => (
@@ -52,7 +52,7 @@ const GetStarted = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| Resources  Provided  " textStyles="text-2xl font-bold" />
+        <TypingText title="| Resources  Provided  " />
         <TitleText title={<>Essential Links</>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures2.map((feature, index) => (
