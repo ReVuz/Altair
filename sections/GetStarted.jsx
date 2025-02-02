@@ -22,7 +22,7 @@ const GetStarted = () => (
         className={`${styles.flexCenter} flex-1`}
       >
         <img
-          src="/get-started.png"
+          src="/altair_animation_2.gif"
           alt="Get-Started"
           className="w-[90%] h-[90%] object-content"
         />
@@ -65,7 +65,7 @@ const GetStarted = () => (
         className={`${styles.flexCenter} flex-1 relative w-full h-[500px] lg:h-auto min-h-[300px]`}
       >
         <img
-          src="/get-started.png"
+          src="/link.jpg"
           alt="Get-Started"
           className="w-auto h-auto max-w-full max-h-full object-contain p-4"
         />
