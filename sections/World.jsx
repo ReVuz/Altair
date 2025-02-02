@@ -14,7 +14,7 @@ const World = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| Altire Inspire" textStyles="text-center" />
+      <TypingText title="| Altire Inspire" textStyles="text-center font-medium text-2xl mb-5" />
       <TitleText
         title={(
           <>

@@ -18,7 +18,7 @@ const About = () => (
     >
       <TypingText
         title="| About Altair"
-        textStyles="text-center"
+        textStyles="text-center font-medium text-2xl mb-5"
       />
 
       <motion.p

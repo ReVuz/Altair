@@ -17,8 +17,8 @@ const Insights = () => (
     >
       {/* Section Header */}
       <div className="text-center mb-16">
-        <TypingText title="| what to Submit" textStyles="mb-4" />
-        <TitleText title="Submit Your Work" />
+        <TypingText title="| Submission instructions" textStyles=" font-medium text-2xl mb-5" />
+        <TitleText title="What to Submit" />
       </div>
 
       {/* Main Insights Grid */}
@@ -35,7 +35,7 @@ const Insights = () => (
       {/* Submission Instructions Section */}
       <div className="mt-28">
         <TitleText
-          title="Submission Instructions"
+          title="How to Submit"
           textStyles="text-left mb-10"
         />
 
@@ -44,6 +44,7 @@ const Insights = () => (
             key="submission-instruction-1"
             imgUrl="/planet-06.png"
             title={<span className="text-4xl">Zip your files and rename the archive as <span className="text-3xl font-semibold"> "YouCollege_YourName.zip"</span></span>}
+            subtitle={<>Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum</>}
             reverse
             index={5}
           />
@@ -51,7 +52,8 @@ const Insights = () => (
           <InsightCard
             key="submission-instruction-2"
             imgUrl="/planet-06.png"
-            title={<span className="text-4xl">Upload your zipped file [here]</span>}
+            title={<span className="text-4xl">Upload your zipped file</span>}
+            subtitle={<>Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum</>}
             reverse
             index={6}
           />

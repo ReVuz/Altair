@@ -32,9 +32,9 @@ const Navbar = () => {
       <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
         <div className="flex items-center">
           <img
-            src="/Altair_logo.png"
-            alt="Altair Logo"
-            className="h-[40px] object-contain hover:scale-105 transition-transform duration-300 filter contrast-125 drop-shadow-lg"
+            src="/sae_logo.png"
+            alt="SAE Logo"
+            className="h-[100px] md:h-[150px] object-contain hover:scale-105 transition-transform duration-300 filter contrast-125 drop-shadow-lg mr-4"
             style={{
               filter: 'brightness(1.1) contrast(1.1)',
             }}
