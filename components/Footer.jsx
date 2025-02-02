@@ -15,17 +15,19 @@ const Footer = () => (
   >
     {/* Enhanced gradient background */}
     <div className="footer-gradient bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-600 absolute inset-0 opacity-40" />
-    
+
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-12 relative z-10`}>
       <div className="flex items-center justify-between flex-wrap gap-5">
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
           Ready to Submit!
         </h4>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVKCPMU3TpIA1ZvLnPXarsxiSnkjq6fTqbaup60zy_gg4tTQ/viewform?usp=sharing" 
-           target="_blank" 
-           rel="noopener noreferrer">
-          <button type="button" 
-                  className="flex items-center h-fit py-4 px-8 bg-[#25618B] hover:bg-[#1b4d6b] rounded-[32px] gap-[12px] transition-all duration-300 transform hover:scale-105 shadow-lg">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVKCPMU3TpIA1ZvLnPXarsxiSnkjq6fTqbaup60zy_gg4tTQ/viewform?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button type="button"
+            className="flex items-center h-fit py-4 px-8 bg-[#25618B] hover:bg-[#1b4d6b] rounded-[32px] gap-[12px] transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
             <img
               src="/headset.svg"
               alt="headset"
@@ -50,19 +52,19 @@ const Footer = () => (
             <div className="flex flex-col p-6 bg-white bg-opacity-5 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:transform hover:scale-105">
               <span className="text-xl font-semibold mb-3 text-blue-300">Jithika P Sajan</span>
               <a href="tel:9037439200" className="hover:text-blue-400 transition-colors duration-300">
-                <i className="fas fa-phone-alt mr-2"></i>+91 9037439200
+                <i className="fas fa-phone-alt mr-2" />+91 9037439200
               </a>
               <a href="mailto:jithikapsinfo@gmail.com" className="hover:text-blue-400 transition-colors duration-300">
-                <i className="fas fa-envelope mr-2"></i>jithikapsinfo@gmail.com
+                <i className="fas fa-envelope mr-2" />jithikapsinfo@gmail.com
               </a>
             </div>
             <div className="flex flex-col p-6 bg-white bg-opacity-5 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:transform hover:scale-105">
               <span className="text-xl font-semibold mb-3 text-blue-300">Sandra V M</span>
               <a href="tel:7994880625" className="hover:text-blue-400 transition-colors duration-300">
-                <i className="fas fa-phone-alt mr-2"></i>+91 7994880625
+                <i className="fas fa-phone-alt mr-2" />+91 7994880625
               </a>
               <a href="mailto:sandravminfo@gmail.com" className="hover:text-blue-400 transition-colors duration-300">
-                <i className="fas fa-envelope mr-2"></i>sandravminfo@gmail.com
+                <i className="fas fa-envelope mr-2" />sandravminfo@gmail.com
               </a>
             </div>
           </div>
@@ -78,9 +80,9 @@ const Footer = () => (
 
           <div className="flex gap-6">
             {socials.map((social) => (
-              <a 
-                key={social.name} 
-                href={social.link} 
+              <a
+                key={social.name}
+                href={social.link}
                 className="hover:opacity-80 transition-all duration-300 transform hover:scale-110"
               >
                 <img
