@@ -71,9 +71,16 @@ const Footer = () => (
         </div>
 
         <div className="flex items-center justify-between flex-wrap gap-4 pt-6 border-t border-white border-opacity-20">
-          <h4 className="font-extrabold text-[32px] text-white bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-            ALTAIR
-          </h4>
+        <div className="flex items-center">
+          <img
+            src="/Altair_logo.png"
+            alt="Altair Logo"
+            className="h-[40px] object-contain hover:scale-105 transition-transform duration-300 filter contrast-125 drop-shadow-lg"
+            style={{
+              filter: 'brightness(1.1) contrast(1.1)',
+            }}
+          />
+        </div>
           <p className="font-normal text-[14px] text-white opacity-70">
             Copyright © 2025 Altair. All rights reserved.
           </p>
