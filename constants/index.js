@@ -6,12 +6,12 @@ export const exploreWorlds = [
   },
   {
     id: 'world-2',
-    imgUrl: '/planet-02.png',
+    imgUrl: '/planet-03.png',
     title: 'Manufacturing Simulation',
   },
   {
     id: 'world-3',
-    imgUrl: '/planet-03.png',
+    imgUrl: '/planet-02.png',
     title: 'Multibody Dynamics',
   },
   {
