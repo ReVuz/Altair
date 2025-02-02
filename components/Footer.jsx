@@ -50,6 +50,16 @@ const Footer = () => (
               <a href="tel:7994880625" className="hover:text-blue-400">7994880625</a>
               <a href="mailto:sandravminfo@gmail.com" className="hover:text-blue-400">sandravminfo@gmail.com</a>
             </div>
+            <div className="flex flex-col">
+              <span>Ramesha BS</span>
+              <a href="tel:9177770258" className="hover:text-blue-400">9177770258</a>
+              <a href="mailto:rambs@altair.com" className="hover:text-blue-400">rambs@altair.com</a>
+            </div>
+            <div className="flex flex-col">
+              <span>Guru Charan Kotthuru</span>
+              <a href="tel:9392394354" className="hover:text-blue-400">9392394354</a>
+              <a href="mailto:guruc@altair.com" className="hover:text-blue-400">guruc@altair.com</a>
+            </div>
           </div>
         </div>
 
