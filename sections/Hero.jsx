@@ -103,6 +103,7 @@ const Hero = () => {
               >
                 Contest
               </motion.span>
+              {' '}
               <motion.span
                 className="inline-block hover:[transform:translateZ(-20px)]"
                 transition={{ type: 'spring' }}

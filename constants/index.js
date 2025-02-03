@@ -22,7 +22,7 @@ export const exploreWorlds = [
   {
     id: 'world-5',
     imgUrl: '/planet-05.jpg',
-    title: 'CFD (Computational Fluid Dynamics)',
+    title: 'Computational Fluid Dynamics',
   },
 ];
 
