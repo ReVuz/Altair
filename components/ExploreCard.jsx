@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
@@ -20,12 +19,8 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         {title}
       </h3>
     ) : (
-      <div className="absolute bottom-0 p-8 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
-        <div className={`${styles.flexCenter} w-[60px] h-[60px] glassmorphism mb-[16px] rounded-[12px]`}>
-          <img src="/headset.svg" alt="headset" className="w-1/2 h-1/2 object-contain" />
-        </div>
-        <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">Lesssgooooooooooo</p>
-        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
+      <div className="absolute bottom-0 lg:p-8 sm:p-4 justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
+        <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] sm:text-center ml-2 text-white">
           {title}
         </h2>
       </div>
