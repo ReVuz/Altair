@@ -22,14 +22,9 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col relative z-10`}
       >
-        {/* Logo */}
-        <div className="flex justify-center mb-5">
-          <img src="/path/to/your/logo.png" alt="Logo" className="w-16 h-16 md:w-24 md:h-24" />
-        </div>
-
         {/* Title */}
         <TypingText title="| The Challenge" textStyles="text-center text-2xl md:text-3xl font-extrabold mb-5 text-white" />
-        <TitleText title={<>Use Altair Inspire to tackle an open-ended engineering problem. <br className="md:block hidden" /> Focus areas include:</>} textStyles="text-center text-white" />
+        <TitleText title={<>Use Altair Inspire to tackle an open-ended engineering problem <br className="md:block hidden" /> Focus areas include:</>} textStyles="text-center text-white" />
 
         {/* Explore Cards */}
         <div className="mt-12 flex flex-col lg:flex-row min-h-[70vh] gap-5">

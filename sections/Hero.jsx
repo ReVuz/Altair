@@ -77,33 +77,33 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <motion.span 
-                className="inline-block hover:[transform:translateZ(20px)]" 
+              <motion.span
+                className="inline-block hover:[transform:translateZ(20px)]"
                 transition={{ type: 'spring' }}
                 whileTap={{ scale: 0.9 }}
               >
-                <img 
-                  src="/Altair_logo.png" 
-                  alt="Altair" 
-                  className="h-[80px] sm:h-[100px] lg:h-[120px] inline-block w-auto" 
+                <img
+                  src="/Altair_logo.png"
+                  alt="Altair"
+                  className="h-[80px] sm:h-[100px] lg:h-[120px] inline-block w-auto"
                 />
               </motion.span>
-              <motion.span 
-                className="inline-block hover:[transform:translateZ(-20px)]" 
+              <motion.span
+                className="inline-block hover:[transform:translateZ(-20px)]"
                 transition={{ type: 'spring' }}
                 whileTap={{ scale: 0.9 }}
               >
                 Optimization
               </motion.span>
-              <motion.span 
-                className="inline-block hover:[transform:translateZ(-20px)]" 
+              <motion.span
+                className="inline-block hover:[transform:translateZ(-20px)]"
                 transition={{ type: 'spring' }}
                 whileTap={{ scale: 0.9 }}
               >
                 Contest
               </motion.span>
-              <motion.span 
-                className="inline-block hover:[transform:translateZ(-20px)]" 
+              <motion.span
+                className="inline-block hover:[transform:translateZ(-20px)]"
                 transition={{ type: 'spring' }}
                 whileTap={{ scale: 0.9 }}
               >
