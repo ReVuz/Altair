@@ -16,10 +16,17 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText
-        title="| About Altair"
-        textStyles="text-center font-medium text-2xl mb-5"
-      />
+      <div className="flex items-center justify-center gap-3 relative">
+        <TypingText
+          title="| About"
+          textStyles="text-center font-medium text-3xl mb-5 font-extrabold"
+        />
+        <img
+          src="/Altair_logo.png"
+          alt="Altair"
+          className="h-[35px] w-auto -mt-6 ml-2" // Added -mt-2 for upward shift and ml-2 for right shift
+        />
+      </div>
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}

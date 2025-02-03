@@ -17,7 +17,7 @@ const Insights = () => (
     >
       {/* Section Header */}
       <div className="text-center mb-16">
-        <TypingText title="| Submission instructions" textStyles=" font-medium text-2xl mb-5" />
+        <TypingText title="| Submission instructions" textStyles=" text-3xl font-extrabold mb-5" />
         <TitleText title="What to Submit" />
       </div>
 

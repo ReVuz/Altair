@@ -31,7 +31,7 @@ const GetStarted = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| How to Participate " textStyles="font-medium text-2xl mb-5" />
+        <TypingText title="| How to Participate " textStyles="text-3xl font-extrabold mb-5" />
         <TitleText title={<> Choose Your Model </>} />
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((features, index) => (
@@ -52,11 +52,15 @@ const GetStarted = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| Resources  Provided  " textStyles="font-medium text-2xl mb-5" />
-        <TitleText title={<>Essential Links</>} />
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
+        <TypingText title="| Resources  Provided  " textStyles="text-3xl font-extrabold mb-5" />
+        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px] text-lg"> {/* Added text-lg class */}
           {startingFeatures2.map((feature, index) => (
-            <StartSteps key={index} number={index + 1} text={feature} />
+            <StartSteps
+              key={index}
+              number={index + 1}
+              text={feature}
+              textStyles="text-lg" // Add this prop if StartSteps component accepts textStyles
+            />
           ))}
         </div>
       </motion.div>

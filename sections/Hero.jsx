@@ -2,7 +2,7 @@
 
 import { motion, useMotionTemplate, useMotionValue, useTransform } from 'framer-motion';
 import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { slideIn, staggerContainer } from '../utils/motion';
 
 const Hero = () => {
   const mouseX = useMotionValue(0);
@@ -47,10 +47,14 @@ const Hero = () => {
               transition={{ type: 'spring', stiffness: 300 }}
             >
               <motion.span
-                className="inline-block mr-4 hover:[transform:translateZ(20px)]"
+                className="inline-block hover:[transform:translateZ(20px)]"
                 transition={{ type: 'spring' }}
               >
-                Altair
+                <img
+                  src="/Altair_logo.png"
+                  alt="Altair"
+                  className="h-[120px] inline-block w-auto"
+                />
               </motion.span>
               <motion.span
                 className="inline-block hover:[transform:translateZ(-20px)]"
@@ -142,7 +146,6 @@ const Hero = () => {
               }}
             />
           </motion.div>
-
         </motion.div>
       </motion.div>
     </section>

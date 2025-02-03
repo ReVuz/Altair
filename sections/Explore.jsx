@@ -21,7 +21,7 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText title="| The Challenge" textStyles="text-center font-medium text-2xl mb-5" />
+        <TypingText title="| The Challenge" textStyles="text-center text-3xl font-extrabold mb-5" />
         <TitleText title={<>Use Altair Inspire to tackle an open-ended engineering problem. <br className="md:block hidden " /> Focus areas include:</>} textStyles="text-center" />
 
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
