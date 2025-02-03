@@ -1,114 +1,113 @@
 'use client';
 
-import React from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const Feedback = () => {
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.3,
   });
-  const fadeIn = {
-    opacity: 1,
-    transform: 'translateY(0)',
-  };
-
-  const styles = {
-    container: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
-      padding: '2rem',
-      opacity: 0,
-      transform: 'translateY(30px)',
-      transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
-      position: 'relative',
-      overflow: 'hidden',
-    },
-    visible: fadeIn,
-    title: {
-      fontSize: 'clamp(5rem, 4vw, 2.5rem)',
-      color: '#fff',
-      marginBottom: '1rem',
-      fontWeight: '300',
-      letterSpacing: '2px',
-      textTransform: 'uppercase',
-      textShadow: '0 2px 4px rgba(0,0,0,0.3)',
-      opacity: 0.9,
-      transform: 'translateY(20px)',
-      transition: 'all 0.6s ease 0.2s',
-    },
-    counterContainer: {
-      position: 'relative',
-      display: 'inline-flex',
-      alignItems: 'baseline',
-    },
-    counter: {
-      background: 'linear-gradient(45deg, #e6dada 0%, #274046 100%)',
-      WebkitBackgroundClip: 'text',
-      backgroundClip: 'text',
-      color: 'transparent',
-      fontSize: 'clamp(3rem, 12vw, 6rem)',
-      fontWeight: '700',
-      fontFamily: '"Arial Black", sans-serif',
-      letterSpacing: '-2px',
-      lineHeight: 1,
-      marginRight: '0.2em',
-    },
-    plus: {
-      position: 'absolute',
-      top: '-5%',
-      right: '-9%',
-      color: 'rgba(255,255,255,0.7)',
-      fontSize: 'clamp(3rem, 8vw, 4rem)',
-      fontWeight: '300',
-      textShadow: '0 2px 8px rgba(0,123,255,0.4)',
-      transform: 'translateY(-30%)',
-    },
-    sparkles: {
-      position: 'absolute',
-      width: '100%',
-      height: '100%',
-      pointerEvents: 'none',
-    },
-    sparkle: {
-      position: 'absolute',
-      background: 'rgba(255,255,255,0.4)',
-      borderRadius: '50%',
-      animation: 'sparkle 1.5s infinite',
-    },
-  };
-
-  // Generate random sparkle positions
-  styles.sparkles = {
-    ...styles.sparkles,
-    ...Array.from({ length: 12 }).reduce((acc, _, i) => ({
-      [`& > div:nth-of-type(${i + 1})`]: {
-        top: `${Math.random() * 100}%`,
-        left: `${Math.random() * 100}%`,
-        width: `${Math.random() * 6 + 4}px`,
-        height: `${Math.random() * 6 + 4}px`,
-      },
-    })),
-  };
 
   return (
-    <div style={{ ...styles.container, ...(inView && styles.visible) }} ref={ref}>
-      <h2 style={styles.title}>People Registered</h2>
-      <div style={styles.counterContainer}>
-        <div style={styles.counter}>
-          {inView && <CountUp end={1000} duration={3} />}
-        </div>
-        <span style={styles.plus}>+</span>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className={`
+        flex flex-col items-center justify-center
+        min-h-[40vh] sm:min-h-[50vh] md:min-h-[70vh] lg:min-h-[90vh]
+        px-4 py-8 sm:p-8 md:p-12 lg:p-16
+        relative overflow-hidden
+        transition-all duration-800 ease-in-out
+        ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
+      `}
+      ref={ref}
+    >
+      {/* Title */}
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="
+          text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+          text-white
+          mb-4 sm:mb-6 md:mb-8
+          font-light tracking-wider uppercase
+          text-center
+          text-shadow-lg
+          opacity-90
+          px-4
+          transition-all duration-600
+        "
+      >
+        People Registered
+      </motion.h2>
+
+      {/* Counter Container */}
+      <div className="flex items-start justify-center">
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="flex items-start"
+        >
+          {/* Counter Number */}
+          <div
+            className="
+              bg-gradient-to-r from-[#e6dada] to-[#274046]
+              text-transparent bg-clip-text
+              text-5xl sm:text-6xl md:text-7xl lg:text-8xl
+              font-bold
+              font-['Arial Black', sans-serif]
+              tracking-tighter
+              leading-none
+            "
+          >
+            {inView && <CountUp end={1000} duration={3} />}
+          </div>
+
+          {/* Plus Sign */}
+          <span
+            className="
+              text-white/70
+              text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+              font-light
+              ml-1
+              leading-none
+              mt-1
+            "
+          >
+            +
+          </span>
+        </motion.div>
       </div>
-      <div style={styles.sparkles}>
-        {[...Array(12)].map((_, i) => <div key={i} style={styles.sparkle} />)}
+
+      {/* Sparkles */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(12)].map((_, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0, 1, 0] }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+            className="absolute bg-white/40 rounded-full animate-sparkle"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              width: `${Math.min(Math.random() * 6 + 2, 6)}px`,
+              height: `${Math.min(Math.random() * 6 + 2, 6)}px`,
+              animationDelay: `${Math.random() * 2}s`,
+            }}
+          />
+        ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

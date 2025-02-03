@@ -120,3 +120,22 @@
 .shadow-lg {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+/* Responsive text shadow */
+.text-shadow-lg {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
