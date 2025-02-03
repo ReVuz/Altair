@@ -7,7 +7,7 @@ const Page = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/Altair');
+    router.push('/altair-contest');
   }, [router]);
   return (
     <div className="flex items-center justify-center min-h-screen bg-primary-black">
