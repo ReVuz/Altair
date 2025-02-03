@@ -89,12 +89,13 @@ const Hero = () => {
                 />
               </motion.span>
               <motion.span
-                className="inline-block hover:[transform:translateZ(-20px)]"
+                className="inline-block hover:[transform:translateZ(-20px)] mr-2" // Added margin-right
                 transition={{ type: 'spring' }}
                 whileTap={{ scale: 0.9 }}
               >
                 Optimization
               </motion.span>
+              {' '}
               <motion.span
                 className="inline-block hover:[transform:translateZ(-20px)]"
                 transition={{ type: 'spring' }}

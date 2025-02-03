@@ -70,7 +70,7 @@ const Insights = () => (
         <div className="flex flex-col gap-8 sm:gap-14">
           <InsightCard
             key="submission-instruction-1"
-            imgUrl="/planet-06.png"
+            imgUrl="/planet-07.png"
             title={(
               <span className="text-2xl sm:text-3xl lg:text-4xl">
                 Zip your files and rename the archive as{' '}
@@ -79,16 +79,16 @@ const Insights = () => (
                 </span>
               </span>
             )}
-            subtitle={<>Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum</>}
+            subtitle={<>Package all submission components (certification, .stmod file, report, and video link) into one archive. Follow naming conventions for efficient judge tracking and verification</>}
             reverse
             index={5}
           />
 
           <InsightCard
             key="submission-instruction-2"
-            imgUrl="/planet-06.png"
+            imgUrl="/planet-11.webp"
             title={<span className="text-2xl sm:text-3xl lg:text-4xl">Upload your zipped file</span>}
-            subtitle={<>Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum</>}
+            subtitle={<>Upload your optimized solution package through the official contest portal. Ensure all files are accessible and meet technical requirements before final submission</>}
             reverse
             index={6}
           />

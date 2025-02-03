@@ -60,26 +60,22 @@ export const insights = [
   {
     imgUrl: '/planet-06.png',
     title: 'Altair Inspire Structures Professional Certification',
-    subtitle:
-    'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+    subtitle: 'Validate your expertise in structural simulation and optimization with industry-recognized credentials for career advancement',
   },
   {
     imgUrl: '/planet-07.png',
     title: 'Inspire Solved File (.stmod)',
-    subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+    subtitle: 'Include all boundary conditions and optimization parameters in your .stmod file for full technical compliance with contest standards',
   },
   {
     imgUrl: '/planet-08.png',
     title: 'Analysis Report (PPT, PDF, or DOC)',
-    subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+    subtitle: 'Present a comprehensive analysis correlating simulation results with performance goals across structural, dynamic, and fluid domains',
   },
   {
-    imgUrl: '/planet-06.png',
-    title: 'Submit a video recording of the process on YouTube and share the link.',
-    subtitle:
-    'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+    imgUrl: '/planet-09.png',
+    title: 'Submit a video recording of the process on YouTube and share the link',
+    subtitle: 'Showcase your problem-solving approach through a narrated video, demonstrating Inspire’s capabilities in addressing the contest’s open-ended challenge',
   },
 ];
 
