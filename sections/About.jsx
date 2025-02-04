@@ -17,8 +17,13 @@ const About = () => (
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
       <div className="flex items-center justify-center gap-3 relative">
+        <img
+          src="/sae_logo.png"
+          alt="SAE LOGO"
+          className="h-[50px] md:h-[100px] w-auto -mt-6 ml-2"
+        />
         <TypingText
-          title="| About"
+          title="X"
           textStyles="text-center font-medium text-3xl mb-5 font-extrabold"
         />
         <img
@@ -32,7 +37,7 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold"> Altair® Inspire™  </span> transforms simulation into a simple and powerful tool for design optimization. With its intuitive interface and comprehensive features, Inspire helps you push the boundaries of component design and accelerate product development from concept to reality. Whether you are aiming for performance or manufacturability, Inspire offers a seamless experience to create, optimize, and study innovative parts and assemblies.
+        <span className="font-extrabold"> SAE CUSAT </span>in collaboration with Altair Inspire, presents an exciting optimization contest  designed to challenge students in the fields of structural design, simulation, and optimization. This competition provides participants with hands-on experience using Altair Inspire, a powerful simulation-driven design tool, to analyze and optimize engineering components.
       </motion.p>
 
       <motion.img
