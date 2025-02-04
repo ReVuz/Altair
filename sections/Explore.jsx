@@ -31,9 +31,11 @@ const Explore = () => {
           <TitleText
             title={(
               <div className="flex flex-col items-center justify-center">
-                <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center">
-                  Use Altair Inspire to tackle an open-ended engineering problem
-                </span>
+                <div className="flex flex-col p-8 bg-white bg-opacity-5 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:transform hover:scale-105 mb-8">
+                  <span className=" sm:text-xl text-xl md:text-2xl lg:text-3xl text-center text-white font-semibold">
+                    Use Altair Inspire to tackle an open-ended engineering problem
+                  </span>
+                </div>
                 <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center mt-2 sm:mt-3">
                   Focus areas include:
                 </span>

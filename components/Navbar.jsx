@@ -49,9 +49,16 @@ const Navbar = () => {
           <a href="#explore" className="text-white hover:text-gray-300 transition-colors duration-300">
             Explore
           </a>
+          <a href="#register" className="text-white hover:text-gray-300 transition-colors duration-300">
+            Register
+          </a>
+          <a href="#submit" className="text-white hover:text-gray-300 transition-colors duration-300">
+            Submit
+          </a>
           <a href="#contact" className="text-white hover:text-gray-300 transition-colors duration-300">
             Contact
           </a>
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -87,12 +94,27 @@ const Navbar = () => {
               Explore
             </a>
             <a
+              href="#register"
+              className="text-white hover:text-gray-300 transition-colors duration-300 py-2 px-4 text-lg"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Register
+            </a>
+            <a
+              href="#submit"
+              className="text-white hover:text-gray-300 transition-colors duration-300 py-2 px-4 text-lg"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Submit
+            </a>
+            <a
               href="#contact"
               className="text-white hover:text-gray-300 transition-colors duration-300 py-2 px-4 text-lg"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </a>
+
           </div>
         </motion.div>
       )}

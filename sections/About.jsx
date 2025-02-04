@@ -20,7 +20,7 @@ const About = () => (
         <img
           src="/sae_logo.png"
           alt="SAE LOGO"
-          className="lg:h-[900px] h-[90px] md:h-[100px] w-auto lg:-mt-6 -mt-4 ml-2"
+          className="lg:h-[90px] h-[90px] md:h-[100px] w-auto lg:-mt-6 -mt-4 ml-2"
         />
         <TypingText
           title="X"
