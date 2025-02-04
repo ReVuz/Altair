@@ -20,7 +20,7 @@ const About = () => (
         <img
           src="/sae_logo.png"
           alt="SAE LOGO"
-          className="h-[50px] md:h-[100px] w-auto -mt-6 ml-2"
+          className="lg:h-[900px] h-[90px] md:h-[100px] w-auto lg:-mt-6 -mt-4 ml-2"
         />
         <TypingText
           title="X"
@@ -29,7 +29,7 @@ const About = () => (
         <img
           src="/Altair_logo.png"
           alt="Altair"
-          className="h-[35px] w-auto -mt-6 ml-2" // Added -mt-2 for upward shift and ml-2 for right shift
+          className="h-[35px]  w-auto -mt-6 ml-2" // Added -mt-2 for upward shift and ml-2 for right shift
         />
       </div>
 

@@ -22,12 +22,29 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col relative z-10`}
       >
-        {/* Title */}
-        <TypingText title="| The Challenge" textStyles="text-center text-2xl md:text-3xl font-extrabold mb-5 text-white" />
-        <TitleText title={<>Use Altair Inspire to tackle an open-ended engineering problem <br className="md:block hidden" /> Focus areas include:</>} textStyles="text-center text-white" />
+        {/* Title Section with improved responsive styling */}
+        <div className="w-full px-4 sm:px-6 lg:px-8"> {/* Added padding container */}
+          <TypingText
+            title="| The Challenge"
+            textStyles="text-center text-xl sm:text-2xl md:text-3xl font-extrabold mb-3 sm:mb-5 text-white"
+          />
+          <TitleText
+            title={(
+              <div className="flex flex-col items-center justify-center">
+                <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center">
+                  Use Altair Inspire to tackle an open-ended engineering problem
+                </span>
+                <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center mt-2 sm:mt-3">
+                  Focus areas include:
+                </span>
+              </div>
+            )}
+            textStyles="text-center text-white max-w-[90%] mx-auto lg:max-w-[80%]"
+          />
+        </div>
 
         {/* Explore Cards */}
-        <div className="mt-12 flex flex-col lg:flex-row min-h-[70vh] gap-5">
+        <div className="mt-8 sm:mt-12 flex flex-col lg:flex-row min-h-[70vh] gap-5">
           {exploreWorlds.map((world, index) => (
             <ExploreCard
               key={world.id}
