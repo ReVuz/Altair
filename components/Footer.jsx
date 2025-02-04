@@ -166,12 +166,22 @@ const Footer = () => (
                 </a>
               </div>
               <div className="flex flex-col p-6 bg-white bg-opacity-5 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:transform hover:scale-105">
-                <span className="text-xl font-semibold mb-3 text-blue-300">
-                  Harika Manthena
-                </span>
+                <div className="flex items-center gap-2 mb-3">
+
+                  <span className="text-xl font-semibold text-blue-300">
+                    Harika Manthena
+                  </span>
+                  <img
+                    src="/Altair_logo.png"
+                    alt="Altair Logo"
+                    className="h-[10px] object-contain hover:scale-105 transition-transform duration-300 filter contrast-125 drop-shadow-lg"
+                    style={{
+                      filter: 'brightness(1.1) contrast(1.1)',
+                    }}
+                  />
+                </div>
                 <a
-                  href="tel:6309298466
-"
+                  href="tel:6309298466"
                   className="hover:text-blue-400 transition-colors duration-300"
                 >
                   <i className="fas fa-phone-alt mr-2" />
@@ -185,21 +195,31 @@ const Footer = () => (
                   hmanthena@altair.com
                 </a>
               </div>
+
               <div className="flex flex-col p-6 bg-white bg-opacity-5 rounded-xl backdrop-blur-sm transition-transform duration-300 hover:transform hover:scale-105">
-                <span className="text-xl font-semibold mb-3 text-blue-300">
-                  Guru Charan
-                </span>
+                <div className="flex items-center gap-2 mb-3">
+
+                  <span className="text-xl font-semibold text-blue-300">
+                    Guru Charan
+                  </span>
+                  <img
+                    src="/Altair_logo.png"
+                    alt="Altair Logo"
+                    className="h-[10px] object-contain hover:scale-105 transition-transform duration-300 filter contrast-125 drop-shadow-lg"
+                    style={{
+                      filter: 'brightness(1.1) contrast(1.1)',
+                    }}
+                  />
+                </div>
                 <a
-                  href="tel:9392394354
-"
+                  href="tel:9392394354"
                   className="hover:text-blue-400 transition-colors duration-300"
                 >
                   <i className="fas fa-phone-alt mr-2" />
                   +91 9392394354
                 </a>
                 <a
-                  href="mailto:guruc@altair.com
-"
+                  href="mailto:guruc@altair.com"
                   className="hover:text-blue-400 transition-colors duration-300"
                 >
                   <i className="fas fa-envelope mr-2" />
