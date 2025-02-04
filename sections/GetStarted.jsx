@@ -34,7 +34,7 @@ const GetStarted = () => (
       >
         <div className="relative w-full aspect-square max-w-[500px] mx-auto">
           <img
-            src="/planet-04.png"
+            src="/planet-14.png"
             alt="Get-Started"
             className="w-full h-full object-contain"
           />
