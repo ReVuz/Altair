@@ -93,7 +93,7 @@ const Footer = () => (
             Submit Your Work Here
           </h4>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdVKCPMU3TpIA1ZvLnPXarsxiSnkjq6fTqbaup60zy_gg4tTQ/viewform?usp=sharing"
+            href="https://forms.gle/8D482hU1eF9nkMcbA"
             target="_blank"
             rel="noopener noreferrer"
           >
