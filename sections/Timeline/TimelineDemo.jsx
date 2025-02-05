@@ -72,6 +72,14 @@ export const Timeline = ({ data }) => {
                       [(index - 0.5) / data.length, index / data.length],
                       [1, 1.2],
                     ),
+                    boxShadow: useTransform(
+                      scrollYProgress,
+                      [(index - 0.5) / data.length, index / data.length],
+                      [
+                        'none',
+                        '0 0 10px 2px rgba(59, 130, 246, 0.6)',
+                      ],
+                    ),
                   }}
                 >
                   <motion.div
