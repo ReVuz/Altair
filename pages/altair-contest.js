@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import Head from 'next/head';
 import { Footer, Navbar } from '../components';
 import { About, Explore, Feedback, GetStarted, Hero, Insights } from '../sections';
 import SplashCursor from '../sections/SplashCursor/SplashCursor';
@@ -6,6 +7,11 @@ import { TimelineDemo } from '../sections/Timeline/Timeline';
 
 const Page = () => (
   <>
+    <Head>
+      <title>ALTAIR</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/metadroid-fav.png" />
+    </Head>
     <div className="relative">
       <SplashCursor />
     </div>

@@ -14,7 +14,7 @@ export const TimelineDemo = () => {
     {
       title: 'Registration Ends',
       date: '2025-03-10',
-      description: 'Last day to register your team. Make sure to complete your registration before the deadline.',
+      description: 'Last date to register. Make sure to complete your registration before the deadline.',
       status: 'upcoming',
     },
     {
@@ -26,9 +26,9 @@ export const TimelineDemo = () => {
     {
       title: 'Result Announcement',
       date: '2025-03-24',
-      description: 'The Altair Optimization Challenge victors will be revealed.',
+      description: 'The Altair Optimization Challenge winners will be revealed.',
       status: 'tentative',
-    }
+    },
   ];
 
   return (
