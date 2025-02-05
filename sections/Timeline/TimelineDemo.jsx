@@ -96,6 +96,7 @@ export const Timeline = ({ data }) => {
                 </h3>
                 <p className="text-neutral-300 text-sm">
                   {formatDate(item.date)}
+                  {item.status === 'tentative' && ' (Tentative)'}
                 </p>
                 <p className="text-neutral-400 text-sm max-w-md">
                   {item.description}
