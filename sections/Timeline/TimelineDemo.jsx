@@ -36,10 +36,10 @@ export const Timeline = ({ data }) => {
     >
       <div className="max-w-4xl mx-auto py-8 sm:py-12 md:py-16">
         <div className="space-y-4">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
+          <h2 className="text-xl sm:text-10xl md:text-5xl font-bold text-white">
             Registration Timeline
           </h2>
-          <p className="text-neutral-300 text-sm sm:text-base max-w-prose">
+          <p className="text-neutral-300 text-m sm:text-base max-w-prose">
             Registration is now open from February 5th until March 17th, 2025,
             giving participants a six-week window to join this transformative
             engineering challenge. Secure your spot in this innovative

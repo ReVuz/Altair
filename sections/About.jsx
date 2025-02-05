@@ -16,7 +16,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <div className="flex items-center justify-center gap-3 relative">
+      <div className="flex items-center justify-center gap-3 relative select-none">
         <img
           src="/sae_logo.png"
           alt="SAE LOGO"
@@ -29,7 +29,7 @@ const About = () => (
         <img
           src="/Altair_logo.png"
           alt="Altair"
-          className="h-[35px]  w-auto -mt-6 ml-2" // Added -mt-2 for upward shift and ml-2 for right shift
+          className="h-[35px] w-auto -mt-6 ml-2"
         />
       </div>
 
