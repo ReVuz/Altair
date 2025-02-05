@@ -1,4 +1,5 @@
 'use client';
+
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 
@@ -12,9 +13,9 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     onTouchStart={() => handleClick(id)}
   >
     <img src={imgUrl} alt={title} className="absolute w-full h-full object-cover rounded-[24px]" />
-    
+
     {active !== id ? (
-      <motion.h3 
+      <motion.h3
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
@@ -23,7 +24,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
         {title}
       </motion.h3>
     ) : (
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
