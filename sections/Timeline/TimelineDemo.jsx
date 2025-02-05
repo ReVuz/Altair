@@ -61,31 +61,31 @@ export const Timeline = ({ data }) => {
               max-w-xs sm:max-w-sm"
             >
               {/* Timeline dot */}
-<motion.div className="relative">
-  <motion.div
-    className={`absolute left-0 sm:left-2 h-6 w-6 sm:h-8 
+              <motion.div className="relative">
+                <motion.div
+                  className={`absolute left-0 sm:left-2 h-6 w-6 sm:h-8 
       sm:w-8 rounded-full bg-white dark:bg-black flex 
       items-center justify-center`}
-    style={{
-      scale: useTransform(
-        scrollYProgress,
-        [(index - 0.5) / data.length, index / data.length],
-        [1, 1.2]
-      )
-    }}
-  >
-    <motion.div
-      className="h-0 w-0 sm:h-3 sm:w-3 rounded-full border border-neutral-300 dark:border-neutral-700"
-      style={{
-        backgroundColor: useTransform(
-          scrollYProgress,
-          [(index - 0.5) / data.length, index / data.length],
-          ['rgb(229, 231, 235)', 'rgb(59, 130, 246)']
-        )
-      }}
-    />
-  </motion.div>
-</motion.div>
+                  style={{
+                    scale: useTransform(
+                      scrollYProgress,
+                      [(index - 0.5) / data.length, index / data.length],
+                      [1, 1.2],
+                    ),
+                  }}
+                >
+                  <motion.div
+                    className="h-0 w-0 sm:h-3 sm:w-3 rounded-full border border-neutral-300 dark:border-neutral-700"
+                    style={{
+                      backgroundColor: useTransform(
+                        scrollYProgress,
+                        [(index - 0.5) / data.length, index / data.length],
+                        ['rgb(229, 231, 235)', 'rgb(59, 130, 246)'],
+                      ),
+                    }}
+                  />
+                </motion.div>
+              </motion.div>
 
               {/* Content */}
               <div className="pl-12 sm:pl-16 space-y-2">
