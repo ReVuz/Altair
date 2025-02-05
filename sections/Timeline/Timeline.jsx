@@ -8,7 +8,7 @@ export const TimelineDemo = () => {
     {
       title: 'Registration Starts',
       date: '2025-02-05',
-      description: 'Begin your journey by registering your team for the Altair optimization challenge.',
+      description: 'Begin your journey by registering for the Altair optimization challenge.',
       status: 'current',
     },
     {
