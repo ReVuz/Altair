@@ -61,21 +61,31 @@ export const Timeline = ({ data }) => {
               max-w-xs sm:max-w-sm"
             >
               {/* Timeline dot */}
-              <div
-                className={`absolute left-2 sm:left-3 h-6 w-6 sm:h-8 
-                  sm:w-8 rounded-full bg-white dark:bg-black flex 
-                  items-center justify-center ${
-                  item.status === 'current' ? 'ring-2 ring-blue-500' : ''
-                }`}
-              >
-                <div
-                  className={`h-2 w-2 sm:h-3 sm:w-3 rounded-full ${
-                    item.status === 'current'
-                      ? 'bg-blue-500'
-                      : 'bg-neutral-200 dark:bg-neutral-800'
-                  } border border-neutral-300 dark:border-neutral-700`}
-                />
-              </div>
+<motion.div className="relative">
+  <motion.div
+    className={`absolute left-0 sm:left-2 h-6 w-6 sm:h-8 
+      sm:w-8 rounded-full bg-white dark:bg-black flex 
+      items-center justify-center`}
+    style={{
+      scale: useTransform(
+        scrollYProgress,
+        [(index - 0.5) / data.length, index / data.length],
+        [1, 1.2]
+      )
+    }}
+  >
+    <motion.div
+      className="h-0 w-0 sm:h-3 sm:w-3 rounded-full border border-neutral-300 dark:border-neutral-700"
+      style={{
+        backgroundColor: useTransform(
+          scrollYProgress,
+          [(index - 0.5) / data.length, index / data.length],
+          ['rgb(229, 231, 235)', 'rgb(59, 130, 246)']
+        )
+      }}
+    />
+  </motion.div>
+</motion.div>
 
               {/* Content */}
               <div className="pl-12 sm:pl-16 space-y-2">
