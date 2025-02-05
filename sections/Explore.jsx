@@ -12,9 +12,6 @@ const Explore = () => {
 
   return (
     <section className={`${styles.paddings} relative`} id="explore">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/path/to/your/background.jpg)' }} />
-
       <motion.div
         variants={staggerContainer}
         initial="hidden"

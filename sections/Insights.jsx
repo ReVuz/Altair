@@ -75,7 +75,7 @@ const Insights = () => (
               <span className="text-2xl sm:text-3xl lg:text-4xl">
                 Zip your files and rename the archive as{' '}
                 <span className="text-xl sm:text-2xl lg:text-3xl font-semibold">
-                  "YouCollege_YourName.zip"
+                  "CUSAT_YourName.zip"
                 </span>
               </span>
             )}

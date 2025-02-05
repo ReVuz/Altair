@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import { Footer, Navbar } from '../components';
 import { About, Explore, Feedback, GetStarted, Hero, Insights } from '../sections';
 import SplashCursor from '../sections/SplashCursor/SplashCursor';
+import { TimelineDemo } from '../sections/Timeline/Timeline';
 
 const Page = () => (
   <>
@@ -21,6 +22,7 @@ const Page = () => (
         <GetStarted />
         <div className="gradient-04 z-0" />
         {/* <WhatsNew /> */}
+        <TimelineDemo />
       </div>
       {/* <World /> */}
       <div className="relative">

@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.29.0",
+    "clsx": "^2.1.1",
     "eslint-config-next": "13.0.3",
     "framer-motion": "^7.10.3",
     "html-react-parser": "^5.2.2",
+    "motion": "^12.2.0",
     "next": "13.0.3",
     "react": "18.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "18.2.0",
-    "react-intersection-observer": "^9.15.1"
+    "react-intersection-observer": "^9.15.1",
+    "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "22.13.0",

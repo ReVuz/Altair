@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    domains: ['assets.aceternity.com'],
+  },
 };
 
 module.exports = nextConfig;
