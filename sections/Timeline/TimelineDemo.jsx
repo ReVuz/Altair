@@ -64,8 +64,8 @@ export const Timeline = ({ data }) => {
               <motion.div className="relative">
                 <motion.div
                   className={`absolute left-0 sm:left-0 h-6 w-6 sm:h-8 
-      sm:w-8 rounded-full bg-white dark:bg-black flex 
-      items-center justify-center`}
+                    sm:w-8 rounded-full bg-white dark:bg-black flex 
+                    items-center justify-center overflow-hidden`}
                   style={{
                     scale: useTransform(
                       scrollYProgress,
@@ -83,12 +83,25 @@ export const Timeline = ({ data }) => {
                   }}
                 >
                   <motion.div
-                    className="h-0 w-0 sm:h-3 sm:w-3 rounded-full border border-neutral-300 dark:border-neutral-700"
+                    className="h-2 w-2 sm:h-3 sm:w-3 rounded-full border border-neutral-300 dark:border-neutral-700"
                     style={{
                       backgroundColor: useTransform(
                         scrollYProgress,
                         [(index - 0.5) / data.length, index / data.length],
                         ['rgb(229, 231, 235)', 'rgb(59, 130, 246)'],
+                      ),
+                      boxShadow: useTransform(
+                        scrollYProgress,
+                        [(index - 0.5) / data.length, index / data.length],
+                        [
+                          'none',
+                          '0 0 8px 2px rgba(59, 130, 246, 0.8)',
+                        ],
+                      ),
+                      scale: useTransform(
+                        scrollYProgress,
+                        [(index - 0.5) / data.length, index / data.length],
+                        [1, 1.1],
                       ),
                     }}
                   />
