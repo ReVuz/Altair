@@ -8,7 +8,7 @@ import { TimelineDemo } from '../sections/Timeline/Timeline';
 const Page = () => (
   <>
     <Head>
-      <title>ALTAIR</title>
+      <title>SAE X ALTAIR</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/metadroid-fav.png" />
     </Head>
