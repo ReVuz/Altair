@@ -88,6 +88,7 @@ const Hero = () => {
                   className="h-[80px] sm:h-[100px] lg:h-[120px] inline-block w-auto"
                 />
               </motion.span>
+              {' '}
               <motion.span
                 className="inline-block hover:[transform:translateZ(-20px)] mr-2" // Added margin-right
                 transition={{ type: 'spring' }}

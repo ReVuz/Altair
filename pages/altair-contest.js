@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import Head from 'next/head';
 import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights } from '../sections';
+import { About, Explore, Feedback, GetStarted, Hero, Insights, World } from '../sections';
 import SplashCursor from '../sections/SplashCursor/SplashCursor';
 import { TimelineDemo } from '../sections/Timeline/Timeline';
 
@@ -30,9 +30,11 @@ const Page = () => (
         {/* <WhatsNew /> */}
         <TimelineDemo />
       </div>
-      {/* <World /> */}
+      <Insights />
+
       <div className="relative">
-        <Insights />
+      <World />
+
         <div className="gradient-04 z-0" />
         <Feedback />
       </div>
