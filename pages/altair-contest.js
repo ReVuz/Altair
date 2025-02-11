@@ -1,6 +1,6 @@
-import "../styles/globals.css";
-import Head from "next/head";
-import { Footer, Navbar } from "../components";
+import '../styles/globals.css';
+import Head from 'next/head';
+import { Footer, Navbar } from '../components';
 import {
   About,
   Explore,
@@ -9,9 +9,9 @@ import {
   Hero,
   Insights,
   World,
-} from "../sections";
-import SplashCursor from "../sections/SplashCursor/SplashCursor";
-import { TimelineDemo } from "../sections/Timeline/Timeline";
+} from '../sections';
+import SplashCursor from '../sections/SplashCursor/SplashCursor';
+import { TimelineDemo } from '../sections/Timeline/Timeline';
 
 const Page = () => (
   <>
