@@ -1,9 +1,17 @@
-import '../styles/globals.css';
-import Head from 'next/head';
-import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, World } from '../sections';
-import SplashCursor from '../sections/SplashCursor/SplashCursor';
-import { TimelineDemo } from '../sections/Timeline/Timeline';
+import "../styles/globals.css";
+import Head from "next/head";
+import { Footer, Navbar } from "../components";
+import {
+  About,
+  Explore,
+  Feedback,
+  GetStarted,
+  Hero,
+  Insights,
+  World,
+} from "../sections";
+import SplashCursor from "../sections/SplashCursor/SplashCursor";
+import { TimelineDemo } from "../sections/Timeline/Timeline";
 
 const Page = () => (
   <>
@@ -33,7 +41,7 @@ const Page = () => (
       <Insights />
 
       <div className="relative">
-      <World />
+        <World />
 
         <div className="gradient-04 z-0" />
         <Feedback />
@@ -41,7 +49,6 @@ const Page = () => (
       <Footer />
     </div>
   </>
-
 );
 
 export default Page;
