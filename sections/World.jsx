@@ -43,15 +43,15 @@ const PrizeSection = () => {
               <img 
                 src={prizes[2].image}
                 alt="Third Prize Trophy"
-                className={`₹{prizes[2].scale} object-contain mb-6 transform 
+                className={`${prizes[2].scale} object-contain mb-6 transform 
                   group-hover:-translate-y-4 transition-all duration-300 rounded-lg dark-blue-shadow`}
               />
               <h3 className="text-2xl md:text-3xl font-semibold text-white mb-3">
                 Third Prize
               </h3>
-              <div className={`₹{prizes[2].textSize} font-bold text-transparent bg-clip-text 
+              <div className={`${prizes[2].textSize} font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-white to-blue-200`}>
-                ₹5,000
+                ₹2,500
               </div>
             </div>
           </div>
@@ -62,15 +62,15 @@ const PrizeSection = () => {
               <img 
                 src={prizes[0].image}
                 alt="First Prize Trophy"
-                className={`₹{prizes[0].scale} object-contain mb-8 transform 
+                className={`${prizes[0].scale} object-contain mb-8 transform 
                   group-hover:-translate-y-4 transition-all duration-300 rounded-lg dark-blue-shadow`}
               />
               <h3 className="text-3xl md:text-4xl font-semibold text-white mb-4">
                 First Prize
               </h3>
-              <div className={`₹{prizes[0].textSize} font-bold text-transparent bg-clip-text 
+              <div className={`${prizes[0].textSize} font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-white to-blue-200`}>
-                ₹15,000
+                ₹10,000
               </div>
             </div>
           </div>
@@ -81,15 +81,15 @@ const PrizeSection = () => {
               <img 
                 src={prizes[1].image}
                 alt="Second Prize Trophy"
-                className={`₹{prizes[1].scale} object-contain mb-6 transform 
+                className={`${prizes[1].scale} object-contain mb-6 transform 
                   group-hover:-translate-y-4 transition-all duration-300 rounded-lg dark-blue-shadow`}
               />
               <h3 className="text-2xl md:text-3xl font-semibold text-white mb-3">
                 Second Prize
               </h3>
-              <div className={`₹{prizes[1].textSize} font-bold text-transparent bg-clip-text 
+              <div className={`${prizes[1].textSize} font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-white to-blue-200`}>
-                ₹10,000
+                ₹5,000
               </div>
             </div>
           </div>
@@ -98,54 +98,5 @@ const PrizeSection = () => {
     </div>
   );
 };
-
-const style = `
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 1s ease-out;
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-.dark-blue-shadow {
-  filter: drop-shadow(0 0 100px rgba(0, 179, 255, 0.8))
-         drop-shadow(0 0 200px rgba(0, 179, 255, 0.6))
-         drop-shadow(0 0 300px rgba(0, 0, 153, 0.4));
-  box-shadow: 0 0 300px rgba(0, 179, 255, 0.8),
-              0 0 400px rgba(0, 179, 255, 0.6),
-              0 0 500px rgba(0, 0, 153, 0.4),
-              0 0 600px rgba(0, 0, 153, 0.3);
-}
-
-/* Add this to ensure the shadow is visible */
-img.dark-blue-shadow {
-  position: relative;
-  z-index: 1;
-  isolation: isolate;
-}
-
-/* Additional styles to help make shadow visible */
-.group {
-  position: relative;
-  isolation: isolate;
-}
-`;
 
 export default PrizeSection;
