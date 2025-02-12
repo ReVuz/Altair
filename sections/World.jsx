@@ -43,7 +43,7 @@ const PrizeSection = () => {
               <img 
                 src={prizes[2].image}
                 alt="Third Prize Trophy"
-                className={`${prizes[2].scale} object-contain mb-6 transform 
+                className={`₹{prizes[2].scale} object-contain mb-6 transform 
                   group-hover:-translate-y-4 transition-all duration-300 rounded-lg dark-blue-shadow`}
               />
               <h3 className="text-2xl md:text-3xl font-semibold text-white mb-3">
