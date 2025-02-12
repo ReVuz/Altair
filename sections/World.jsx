@@ -5,7 +5,7 @@ const PrizeSection = () => {
   const prizes = [
     { 
       position: "First", 
-      amount: 15000, 
+      amount: 10000, 
       scale: "h-[500px] w-[500px] md:h-[600px] md:w-[600px]", // Largest
       textSize: "text-5xl md:text-7xl",
       delay: "delay-200",
@@ -13,7 +13,7 @@ const PrizeSection = () => {
     },
     { 
       position: "Second", 
-      amount: 10000, 
+      amount: 5000, 
       scale: "h-[300px] w-[300px] md:h-[500px] md:w-[500px]", // Medium
       textSize: "text-3xl md:text-5xl",
       delay: "delay-100",
@@ -21,7 +21,7 @@ const PrizeSection = () => {
     },
     { 
       position: "Third", 
-      amount: 5000, 
+      amount: 2500, 
       scale: "h-[300px] w-[300px] md:h-[500px] md:w-[500px]", // Medium
       textSize: "text-3xl md:text-5xl",
       delay: "delay-300",
