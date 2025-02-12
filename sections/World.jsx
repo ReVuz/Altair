@@ -49,9 +49,9 @@ const PrizeSection = () => {
               <h3 className="text-2xl md:text-3xl font-semibold text-white mb-3">
                 Third Prize
               </h3>
-              <div className={`${prizes[2].textSize} font-bold text-transparent bg-clip-text 
+              <div className={`₹{prizes[2].textSize} font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-white to-blue-200`}>
-                $5,000
+                ₹5,000
               </div>
             </div>
           </div>
@@ -62,15 +62,15 @@ const PrizeSection = () => {
               <img 
                 src={prizes[0].image}
                 alt="First Prize Trophy"
-                className={`${prizes[0].scale} object-contain mb-8 transform 
+                className={`₹{prizes[0].scale} object-contain mb-8 transform 
                   group-hover:-translate-y-4 transition-all duration-300 rounded-lg dark-blue-shadow`}
               />
               <h3 className="text-3xl md:text-4xl font-semibold text-white mb-4">
                 First Prize
               </h3>
-              <div className={`${prizes[0].textSize} font-bold text-transparent bg-clip-text 
+              <div className={`₹{prizes[0].textSize} font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-white to-blue-200`}>
-                $15,000
+                ₹15,000
               </div>
             </div>
           </div>
@@ -81,15 +81,15 @@ const PrizeSection = () => {
               <img 
                 src={prizes[1].image}
                 alt="Second Prize Trophy"
-                className={`${prizes[1].scale} object-contain mb-6 transform 
+                className={`₹{prizes[1].scale} object-contain mb-6 transform 
                   group-hover:-translate-y-4 transition-all duration-300 rounded-lg dark-blue-shadow`}
               />
               <h3 className="text-2xl md:text-3xl font-semibold text-white mb-3">
                 Second Prize
               </h3>
-              <div className={`${prizes[1].textSize} font-bold text-transparent bg-clip-text 
+              <div className={`₹{prizes[1].textSize} font-bold text-transparent bg-clip-text 
                 bg-gradient-to-r from-white to-blue-200`}>
-                $10,000
+                ₹10,000
               </div>
             </div>
           </div>
