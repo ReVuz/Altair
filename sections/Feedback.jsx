@@ -65,7 +65,7 @@ const Feedback = () => {
               leading-none
             "
           >
-            {inView && <CountUp end={25} duration={3} />}
+            {inView && <CountUp end={100} duration={3} />}
           </div>
 
           {/* Plus Sign */}
