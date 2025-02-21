@@ -4,30 +4,30 @@ import React from 'react';
 
 const PrizeSection = () => {
   const prizes = [
-    {
-      position: 'First',
-      amount: 15000,
-      scale: 'h-[500px] w-[500px] md:h-[600px] md:w-[600px]', // Largest
-      textSize: 'text-5xl md:text-7xl',
-      delay: 'delay-200',
-      image: '/prize.png',
+    { 
+      position: "First", 
+      amount: 10000, 
+      scale: "h-[500px] w-[500px] md:h-[600px] md:w-[600px]", // Largest
+      textSize: "text-5xl md:text-7xl",
+      delay: "delay-200",
+      image: "/prize.png"
     },
-    {
-      position: 'Second',
-      amount: 10000,
-      scale: 'h-[300px] w-[300px] md:h-[500px] md:w-[500px]', // Medium
-      textSize: 'text-3xl md:text-5xl',
-      delay: 'delay-100',
-      image: 'prize.png',
+    { 
+      position: "Second", 
+      amount: 5000, 
+      scale: "h-[300px] w-[300px] md:h-[500px] md:w-[500px]", // Medium
+      textSize: "text-3xl md:text-5xl",
+      delay: "delay-100",
+      image: "prize.png"
     },
-    {
-      position: 'Third',
-      amount: 5000,
-      scale: 'h-[300px] w-[300px] md:h-[500px] md:w-[500px]', // Medium
-      textSize: 'text-3xl md:text-5xl',
-      delay: 'delay-300',
-      image: '/prize.png',
-    },
+    { 
+      position: "Third", 
+      amount: 2500, 
+      scale: "h-[300px] w-[300px] md:h-[500px] md:w-[500px]", // Medium
+      textSize: "text-3xl md:text-5xl",
+      delay: "delay-300",
+      image: "/prize.png"
+    }
   ];
 
   return (
@@ -51,9 +51,8 @@ const PrizeSection = () => {
                 Third Prize
               </h3>
               <div className={`${prizes[2].textSize} font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-white to-blue-200`}
-              >
-                $5,000
+                bg-gradient-to-r from-white to-blue-200`}>
+                ₹2,500
               </div>
             </div>
           </div>
@@ -71,9 +70,8 @@ const PrizeSection = () => {
                 First Prize
               </h3>
               <div className={`${prizes[0].textSize} font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-white to-blue-200`}
-              >
-                $15,000
+                bg-gradient-to-r from-white to-blue-200`}>
+                ₹10,000
               </div>
             </div>
           </div>
@@ -91,9 +89,8 @@ const PrizeSection = () => {
                 Second Prize
               </h3>
               <div className={`${prizes[1].textSize} font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-white to-blue-200`}
-              >
-                $10,000
+                bg-gradient-to-r from-white to-blue-200`}>
+                ₹5,000
               </div>
             </div>
           </div>
@@ -102,54 +99,5 @@ const PrizeSection = () => {
     </div>
   );
 };
-
-const style = `
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 1s ease-out;
-}
-
-.animate-fadeInUp {
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-.dark-blue-shadow {
-  filter: drop-shadow(0 0 100px rgba(0, 179, 255, 0.8))
-         drop-shadow(0 0 200px rgba(0, 179, 255, 0.6))
-         drop-shadow(0 0 300px rgba(0, 0, 153, 0.4));
-  box-shadow: 0 0 300px rgba(0, 179, 255, 0.8),
-              0 0 400px rgba(0, 179, 255, 0.6),
-              0 0 500px rgba(0, 0, 153, 0.4),
-              0 0 600px rgba(0, 0, 153, 0.3);
-}
-
-/* Add this to ensure the shadow is visible */
-img.dark-blue-shadow {
-  position: relative;
-  z-index: 1;
-  isolation: isolate;
-}
-
-/* Additional styles to help make shadow visible */
-.group {
-  position: relative;
-  isolation: isolate;
-}
-`;
 
 export default PrizeSection;
