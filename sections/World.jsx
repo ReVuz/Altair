@@ -4,30 +4,30 @@ import React from 'react';
 
 const PrizeSection = () => {
   const prizes = [
-    { 
-      position: "First", 
-      amount: 10000, 
-      scale: "h-[500px] w-[500px] md:h-[600px] md:w-[600px]", // Largest
-      textSize: "text-5xl md:text-7xl",
-      delay: "delay-200",
-      image: "/prize.png"
+    {
+      position: 'First',
+      amount: 10000,
+      scale: 'h-[500px] w-[500px] md:h-[600px] md:w-[600px]', // Largest
+      textSize: 'text-5xl md:text-7xl',
+      delay: 'delay-200',
+      image: '/prize.png',
     },
-    { 
-      position: "Second", 
-      amount: 5000, 
-      scale: "h-[300px] w-[300px] md:h-[500px] md:w-[500px]", // Medium
-      textSize: "text-3xl md:text-5xl",
-      delay: "delay-100",
-      image: "prize.png"
+    {
+      position: 'Second',
+      amount: 5000,
+      scale: 'h-[300px] w-[300px] md:h-[500px] md:w-[500px]', // Medium
+      textSize: 'text-3xl md:text-5xl',
+      delay: 'delay-100',
+      image: 'prize.png',
     },
-    { 
-      position: "Third", 
-      amount: 2500, 
-      scale: "h-[300px] w-[300px] md:h-[500px] md:w-[500px]", // Medium
-      textSize: "text-3xl md:text-5xl",
-      delay: "delay-300",
-      image: "/prize.png"
-    }
+    {
+      position: 'Third',
+      amount: 2500,
+      scale: 'h-[300px] w-[300px] md:h-[500px] md:w-[500px]', // Medium
+      textSize: 'text-3xl md:text-5xl',
+      delay: 'delay-300',
+      image: '/prize.png',
+    },
   ];
 
   return (
@@ -51,7 +51,8 @@ const PrizeSection = () => {
                 Third Prize
               </h3>
               <div className={`${prizes[2].textSize} font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-white to-blue-200`}>
+                bg-gradient-to-r from-white to-blue-200`}
+              >
                 ₹2,500
               </div>
             </div>
@@ -70,7 +71,8 @@ const PrizeSection = () => {
                 First Prize
               </h3>
               <div className={`${prizes[0].textSize} font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-white to-blue-200`}>
+                bg-gradient-to-r from-white to-blue-200`}
+              >
                 ₹10,000
               </div>
             </div>
@@ -89,7 +91,8 @@ const PrizeSection = () => {
                 Second Prize
               </h3>
               <div className={`${prizes[1].textSize} font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-white to-blue-200`}>
+                bg-gradient-to-r from-white to-blue-200`}
+              >
                 ₹5,000
               </div>
             </div>
