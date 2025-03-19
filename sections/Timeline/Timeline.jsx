@@ -19,13 +19,13 @@ export const TimelineDemo = () => {
     },
     {
       title: 'Submission Deadline',
-      date: '2025-03-30',
+      date: '2025-04-15',
       description: 'Last day to submit your submission. Try not to miss the deadline.',
       status: 'upcoming',
     },
     {
       title: 'Result Announcement',
-      date: '2025-04-06',
+      date: '2025-04-22',
       description: 'The Altair Optimization Challenge winners will be revealed.',
       status: 'tentative',
     },
