@@ -1,0 +1,82 @@
+.Btn {
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  .Btn::before {
+    position: absolute;
+    content: "CHECK WINNERS";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+  
+  .Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive adjustments for the button */
+  @media (max-width: 768px) {
+    .Btn {
+      width: 150px;
+      height: 42px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Btn {
+      width: 140px;
+      height: 40px;
+    }
+    
+    .Btn::before {
+      font-size: 12px;
+      letter-spacing: 0.3px;
+    }
+  }
+  
+  /* For screen readers - visually hidden text */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
