@@ -10,16 +10,32 @@
   scroll-behavior: smooth;
 }
 
+/* Color palette variables for consistent usage */
+:root {
+  --primary: #3a86ff;
+  --primary-light: #8cb8ff;
+  --primary-dark: #1a56cc;
+  --secondary: #ff7e67;
+  --secondary-light: #ffb4a8;
+  --secondary-dark: #cc5547;
+  --accent: #6d28d9;
+  --accent-light: #a78bfa;
+  --accent-dark: #4c1d95;
+  --background: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+}
+
 .gradient-01 {
   background-image: linear-gradient(
     270deg,
-    hsl(295deg 76% 51%) 0%,
-    hsl(284deg 70% 73%) 26%,
-    hsl(257deg 70% 86%) 39%,
-    hsl(202deg 92% 90%) 50%,
-    hsl(215deg 77% 81%) 61%,
-    hsl(221deg 73% 70%) 74%,
-    hsl(220deg 76% 51%) 100%
+    var(--accent) 0%,
+    var(--accent-light) 26%,
+    #bdb2ff 39%,
+    #a2d2ff 50%,
+    var(--primary-light) 61%,
+    var(--primary) 74%,
+    var(--primary-dark) 100%
   );
   filter: blur(125px);
 }
@@ -27,9 +43,9 @@
 .hero-gradient {
   background: linear-gradient(
     97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
+    var(--accent) 0%,
+    var(--primary) 53.65%,
+    var(--accent-light) 100%
   );
 }
 
@@ -39,8 +55,7 @@
   height: 438px;
   top: 0px;
   right: 0px;
-
-  background: #7aebfb;
+  background: var(--primary-light);
   filter: blur(190px);
 }
 
@@ -58,8 +73,7 @@
   height: 800px;
   left: 20%;
   top: 5%;
-
-  background: rgba(149, 66, 232, 0.35);
+  background: rgba(var(--accent-light), 0.35);
   filter: blur(175px);
   transform: rotate(-114.2deg);
 }
@@ -70,8 +84,7 @@
   height: 100vh;
   left: 30%;
   top: 10%;
-
-  background: rgba(45, 72, 152, 0.75);
+  background: rgba(var(--primary-dark), 0.75);
   filter: blur(200px);
   transform: rotate(-53.13deg);
 }
@@ -90,8 +103,7 @@
   height: 316px;
   left: 0px;
   top: 0px;
-
-  background: #8d39a3;
+  background: var(--accent);
   filter: blur(175px);
 }
 
@@ -101,10 +113,10 @@
   height: 100px;
   left: 37%;
   bottom: 0;
-
-  background: #65c4fa;
+  background: var(--primary-light);
   filter: blur(150px);
 }
+
 .transition-colors {
   transition: color 0.3s ease;
 }
@@ -120,6 +132,7 @@
 .shadow-lg {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+
 @keyframes sparkle {
   0%, 100% { opacity: 0; transform: scale(0); }
   50% { opacity: 1; transform: scale(1); }
@@ -138,4 +151,31 @@
   .text-shadow-lg {
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
+}
+
+/* Specific classes for WinnersPopup component */
+.winners-title {
+  color: var(--accent);
+}
+
+.winners-position {
+  color: var(--primary);
+}
+
+.winners-name {
+  color: var(--accent-light);
+}
+
+.winners-institute {
+  color: var(--text-secondary);
+}
+
+/* Confetti colors */
+.confetti-colors {
+  --confetti-1: var(--accent);
+  --confetti-2: var(--primary);
+  --confetti-3: var(--accent-light);
+  --confetti-4: var(--primary-light);
+  --confetti-5: var(--secondary);
+  --confetti-6: var(--secondary-light);
 }
